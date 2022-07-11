@@ -6,31 +6,28 @@ const create = async ({
     id,
     email,
     password,
-    picture,
     firstname,
     lastname,
     address,
     cp,
     country,
     phone,
-    city,
+   
 }) => {
     return db
         .promise()
         .query(
-            "INSERT INTO user (id,email, password, picture, firstname, lastname, address, cp, country, phone, city) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO user (id,email, password, firstname, lastname, address, cp, phone, country) VALUES (?,?,?,?,?,?,?,?,?)",
             [
                 id,
                 email,
                 password,
-                picture,
                 firstname,
                 lastname,
                 address,
                 cp,
-                country,
                 phone,
-                city,
+                country,
 
 
             ]

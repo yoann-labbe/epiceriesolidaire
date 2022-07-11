@@ -1,4 +1,4 @@
-const { createAnnnonce, updateAnnonce, deleteAnnonce, getAnnonce, findAnnonceByCategory, findByUser, deleteAll, findAnnonceByTitle, testDelete, allAnnonce } = require("../models/annonce")
+const { createAnnnonce, updateAnnonce, deleteAnnonce, getAnnonce, findAnnonceByCategory, findByUser, deleteAll, findAnnonceByTitle, allAnnonce } = require("../models/annonce")
 const { v4: uuidv4 } = require('uuid')
 
 
@@ -47,7 +47,7 @@ const controllerFindAnnonce = async (req, res) => {
 
 // controller modifier l'annonce 
 
-const ControllerupdateAnnonce = async (req, res) => {
+const controllerupdateAnnonce = async (req, res) => {
     try {
         const user = req.user
         if (user) {
@@ -223,11 +223,12 @@ const controllerAllAnnonce = async (req, res) => {
 module.exports = {
     controllerCreateAnnonce,
     controllerFindAnnonce,
-    ControllerupdateAnnonce,
     controllerDeleteAnonnce,
     controllerFindByCategory,
     controllerFindAnnonceByUser,
     controllerDeleteAll,
     controllerFindByTitle,
-    controllerAllAnnonce
+    controllerAllAnnonce,
+    controllerupdateAnnonce,
+    
 }

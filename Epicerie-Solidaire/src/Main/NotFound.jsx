@@ -41,13 +41,8 @@ export default function NotFound() {
   const classes = useStyles();
   return (
     <div >
-      <div className={classes.redirect} onClick={redirectToHome}>
-      <Button className={classes.back} >PLANT&FLOWER</Button>
-      <img className={classes.logo} src="/Erreur_404.png" alt="Erreur 404" />
-
-
+      <p>PAGE INTROUVABLE</p>
       </div>
-    </div>
   );
 }
 

@@ -13,19 +13,19 @@ const { validationSignup, validationLogin } = require("../middleware/validation"
 
 
 // route pour creer un utilisateur et pour envoyer un mail pour la confirmation
-router.post("/", dontContinueIfFindEmail, validationSignup, createUSer)
+router.post("/", createUSer)
 // route apres avoir cliqué sur le lien reçus par mail pour l'inscription
 router.get("/verifyemail",tokenEmail,verifymail)
 
 // route pour se connecter 
 router.post("/login", continueIfFindEmail, validationLogin, login)
 
-// route pour mot de passe oublier et envoie un mail a la personne 
-router.post("/verify", findEmail,sendmail2)
-// route apres avoir cliqué sur le lien recu par mail pour le mot de passe
-router.get("/pass",tokenPassword)
-// route pour le nouveau mot de passe de mot de passe oublier
-router.post("/resetpassword/:user",resetPassword)
+// // route pour mot de passe oublier et envoie un mail a la personne 
+// router.post("/verify", findEmail,sendmail2)
+// // route apres avoir cliqué sur le lien recu par mail pour le mot de passe
+// router.get("/pass",tokenPassword)
+// // route pour le nouveau mot de passe de mot de passe oublier
+// router.post("/resetpassword/:user",resetPassword)
 
 // route pour qu'un utilisateur voit son profil
 router.get("/find", verifyToken, findUser)

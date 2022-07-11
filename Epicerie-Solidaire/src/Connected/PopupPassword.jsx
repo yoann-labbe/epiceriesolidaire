@@ -7,7 +7,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import Slide from "@material-ui/core/Slide";
 import { DialogContent, makeStyles } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import Question from "../Common/Question";
+
 import PasswordEmail from "../Password/PasswordMail";
 
 const useStyles = makeStyles((theme) => ({

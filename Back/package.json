@@ -8,6 +8,7 @@
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-load": "^1.1.16",
     "express-router": "^0.0.1",
     "express-validator": "^6.13.0",
     "joi": "^17.4.2",
@@ -39,6 +40,5 @@
   "bugs": {
     "url": "https://github.com/yoann-labbe/flowerlife-express/issues"
   },
-  "homepage": "https://github.com/yoann-labbe/flowerlife-express#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/yoann-labbe/flowerlife-express#readme"
 }

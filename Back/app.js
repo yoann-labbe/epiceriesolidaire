@@ -16,7 +16,7 @@ app.use(cors({ credentials: true, origin:["http://localhost:3000"]}));
 
 
 
-const port = process.env.PORT 
+const port = 8000; 
 
 
 // pour tout ce qui concerne l'utilisateur

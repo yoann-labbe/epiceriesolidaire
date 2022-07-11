@@ -130,6 +130,5 @@ module.exports = {
     findAnnonceByCategory,
     findByUser,
     deleteAll,
-    testDelete,
     allAnnonce
 }

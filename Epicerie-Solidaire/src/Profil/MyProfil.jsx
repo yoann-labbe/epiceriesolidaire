@@ -11,9 +11,6 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 import { useCookies } from 'react-cookie';
-import PopupIban from './PopupIban';
-import PopupDelete from './PopupDelete';
-import SettingsIcon from '@mui/icons-material/Settings';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
@@ -85,10 +82,7 @@ export default function MyProfil() {
         setOpen(false);
         window.location.reload()
     };
-// pour l'iban
-    const handleClick = () => {
-        setOuvrir(false);
-    };
+
     // pour supprimer son profil 
     const handleCloses = () => {
         if (confirm) {

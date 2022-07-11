@@ -5,13 +5,13 @@ import Box from '@mui/material/Box';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import RestoreIcon from '@mui/icons-material/Restore';
 import PersonIcon from '@mui/icons-material/Person';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+
 import History from './History';
 import ModifyProfil from './ModifyProfil';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import Trophy from './Trophy';
+
 import MyAnnonce from './MyAnnonce';
 import MyProfil from './MyProfil';
 import Accueil from '../Home/Accueil';
@@ -67,11 +67,6 @@ export default function Profil(props) {
               <PersonIcon />
               Modifier mon profil
             </Link>
-
-            <Link to="/profil/trophy" style={{ color: "#4C9A62", textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }} >
-              <EmojiEventsIcon />
-              Mes récompenses
-            </Link>
           </div>
 
           <div style={{ marginBottom: "50%" }}>
@@ -80,7 +75,6 @@ export default function Profil(props) {
               <Route exact path="/profil/annonce" component={MyAnnonce} />
               <Route exact path="/profil/history" component={History} />
               <Route exact path="/profil/modify" component={ModifyProfil}/>
-              <Route exact path="/profil/trophy" component={Trophy} />
               <Route exact path="/modifyAnnonce/:id" component={ModifyAnnonce}/>
             </Switch>
           </div>

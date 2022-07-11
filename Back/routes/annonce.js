@@ -1,5 +1,5 @@
 const express = require("express")
-const { controllerCreateAnnonce, controllerFindAnnonce, ControllerupdateAnnonce, controllerDeleteAnonnce, controllerFindByCategory, controllerFindAnnonceByUser, controllerFindByTitle, controllerAllAnnonce } = require("../controllers/annnonce")
+const { controllerCreateAnnonce, controllerFindAnnonce, controllerupdateAnnonce, controllerDeleteAnonnce, controllerFindByCategory, controllerFindAnnonceByUser, controllerFindByTitle, controllerAllAnnonce } = require("../controllers/annnonce")
 const { verifyAnnonce } = require("../middleware/annonce")
 const { verifyToken } = require("../middleware/auth")
 const router = express.Router()
@@ -9,7 +9,7 @@ const router = express.Router()
 // route pour créer une annonce
 router.post("/", verifyToken, controllerCreateAnnonce)
 // route pour modifier une annonce
-router.patch("/update/:id", verifyToken, ControllerupdateAnnonce)
+router.patch("/update/:id", verifyToken, controllerupdateAnnonce)
 // route pour effacer une annonce
 router.delete("/drop/:id", verifyToken, controllerDeleteAnonnce)
 // route pour trouver une annonce 

@@ -101,7 +101,6 @@ export default function PersonalDetails({ prevStep, nextStep, handleChange, valu
                 defaultValue={values.phone}
                 autoComplete="phone"
                 fullWidth
-                data-tip="Merci d'indiquer votre numéro de téléphone, pour le suivis de livraison"
                 data-event='click focus'
               />
             </Grid>
